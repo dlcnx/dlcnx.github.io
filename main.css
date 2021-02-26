@@ -1,0 +1,39 @@
+html,body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body * {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	display: flex;
+	font-family:"Microsoft YaHei","微软雅黑","黑体","宋体",serif;
+	background-attachment:fixed;
+	background-color: #F0F8FF;
+}
+
+h1,h2,h3,h4,h5,h6 {font-weight:500;}
+
+.me {
+	margin: auto;
+	text-align: center;
+}
+
+.me h1 {font-size: 2.5rem;}
+.me h3 {font-size: 1.5rem;}
+
+.me img {
+	width: 5rem;
+	margin: 1rem 0.5rem;
+	border: 2px solid gray;
+	border-radius: 50%;
+	transition: transform 0.3s;
+}
+
+.me img:hover {
+	transform: scale(1.5);
+}

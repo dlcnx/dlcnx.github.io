@@ -1,0 +1,60 @@
+html,body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+  
+body * {
+    margin: 0;
+    padding: 0;
+}
+  
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:"Microsoft YaHei","微软雅黑","黑体","宋体",serif;
+    background-attachment:fixed;
+    background-color: #F0F8FF;
+}
+  
+h1,h2,h3,h4,h5,h6 {font-weight:500;}
+
+.main {
+    position: relative;
+    text-align: center;
+}
+
+.main h2 {
+    margin: 1.2em 0 0;
+}
+
+.main a {
+    text-decoration: none;
+    color: royalblue;
+}
+.main a:hover {border-bottom: 2px solid royalblue;}
+
+.main p {
+    margin: 1.5em 0 0.5em;
+}
+
+.main input:not([type]) {
+    margin: 1em 0;
+    width: 8em;
+    text-align: center;
+}
+
+.main input[type=radio] {
+    margin: 1.5em 0.5em 0 1em;
+}
+.main input[type=submit] {
+    display: block;
+    margin: 0.5em auto 0;
+    border: 0.35px solid black;
+    background-color: white;
+    border-radius: 8%;
+    outline: none;
+    width: 5em;
+    height: 2.5em;
+}

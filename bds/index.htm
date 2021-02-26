@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://s3.ax1x.com/2021/01/03/s9zy9K.jpg">
+    <link rel="stylesheet" href="bds.css">
+    <script src="bds.js"></script>
+    <title>BDS下载</title>
+</head>
+
+<body>
+    <div class="main">
+        <h2>选择系统:</h2>
+        <form name="system">
+            <input type="radio" name="sys" value="win" checked="true">windows
+            <input type="radio" name="sys" value="linux">linux
+        </form>
+        <h2>选择版本:</h2>
+        <input list="ver" id="version">
+        <datalist id="ver">
+            <option value="1.16.201.02">
+            <option value="1.16.200.02">
+            <option value="1.16.101.01">
+            <option value="1.16.101.01">
+            <option value="1.16.100.04">
+            <option value="1.16.40.02">
+            <option value="1.16.20.03">
+            <option value="1.16.10.02">
+            <option value="1.16.1.02">
+            <option value="1.16.0.2">
+            <option value="1.14.60.5">
+            <option value="1.14.32.1">
+            <option value="1.14.30.2">
+            <option value="1.14.20.1">
+            <option value="1.14.1.4">
+            <option value="1.14.0.9">
+            <option value="1.13.3.0">
+            <option value="1.13.2.0">
+            <option value="1.13.1.5">
+            <option value="1.13.0.34">
+            <option value="1.12.1.1">
+            <option value="1.12.0.28">
+            <option value="1.11.4.2">
+            <option value="1.11.2.1">
+            <option value="1.11.1.2">
+            <option value="1.11.0.23">
+            <option value="1.10.0.7">
+            <option value="1.9.0.15">
+            <option value="1.8.1.2">
+            <option value="1.8.0.24">
+            <option value="1.7.0.13">
+            <option value="1.6.1.0">
+        </datalist>
+        <input type="submit" onclick="golink()" value="下载">
+        <p id="tips"></p>
+        <a href="" id="link"></a>
+    </div>
+</body>
+
+</html>
