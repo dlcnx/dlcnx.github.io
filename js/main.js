@@ -1,40 +1,15 @@
-//默认的detail内容
-function remain(){
-    $("#detail").html("These are my websites");
-}
-
-//移到图片1上时
-$(function(){
-    $("#p1").hover(
-		function(){
-			$("#detail").html("My repository");
-		},
-		function(){
-			remain()
-		}
-    )
-});
-
-//移到图片2上时
-$(function(){
-    $("#p2").hover(
-		function(){
-			$("#detail").html("My blog");
-		},
-		function(){
-			remain()
-		}
-    )
-});
-
-//移到图片3上时
-$(function(){
-    $("#p3").hover(
-		function(){
-			$("#detail").html("My cloud disk");
-		},
-		function(){
-			remain()
-		}
-    )
+$(function () {
+	//移到图片上时
+	var me_tag_ids = ["#p1", "#p2", "#p3"];
+	var me_tag_details = ["My repository", "My blog", "My cloud disk"];
+	for (let i = 0; i < me_tag_ids.length; i++) {
+		$(me_tag_ids[i]).hover(
+			function () {
+				$("#detail").html(me_tag_details[i]);
+			},
+			function () {
+				$("#detail").html("These are my websites")
+			}
+		)
+	}
 });
